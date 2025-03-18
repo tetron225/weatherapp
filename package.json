@@ -1,0 +1,29 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "prettier commands ----------------------------- format files",
+  "homepage": "https://github.com/tetron225/template#readme",
+  "bugs": {
+    "url": "https://github.com/tetron225/template/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tetron225/template.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.3"
+  }
+}
