@@ -1,8 +1,11 @@
+import "./styles.css";
+import { gettingAPI } from "./weatherfunction.js";
 
-async function gettingAPI() {
-    let response = await fetch('https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/newyork/?key=27LTJ9KQX9ACRMSBJZKETRUXM', {mode: 'cors'})
-    const weatherData = await response.json()
-    console.log(weatherData.days[0].conditions);
-}
 
-gettingAPI();
+const pressButton = document.querySelector('#press');
+const anInput = document.querySelector('#city');
+
+pressButton.addEventListener('click', () => {
+    console.log(anInput.value);
+    gettingAPI(anInput.value);
+});
